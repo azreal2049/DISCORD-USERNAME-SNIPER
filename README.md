@@ -55,3 +55,45 @@ The engine supports two primary operational approaches[cite: 1]:
 ├── sniper.py            # Underlying scanner engine & dashboard UI
 ├── requirements.txt     # Python dependencies
 └── hits.txt             # Auto-saved available usernames
+
+🚀 ⚡ Quick Start & Setup
+Run these commands in your terminal to clone, install, configure template files, and launch the tool:
+
+Bash
+# 1. Clone repository and navigate inside
+git clone [https://github.com/your-username/discord-username-checker.git](https://github.com/your-username/discord-username-checker.git)
+cd discord-username-checker
+
+# 2. Install required packages
+pip install -r requirements.txt
+
+# 3. Create config.json with your settings (adjust YOUR_DISCORD_TOKEN)
+cat << 'EOF' > config.json
+{
+  "token": "YOUR_DISCORD_TOKEN",
+  "discord_tokens": [
+    "YOUR_DISCORD_TOKEN"
+  ],
+  "length": 4,
+  "charset": "abcdefghijklmnopqrstuvwxyz0123456789",
+  "limit": 1000,
+  "prefix": "",
+  "mock": false,
+  "output_file": "hits.txt"
+}
+EOF
+
+# 4. Create proxies.txt (leave empty for Token Mode, or paste paid proxies)
+cat << 'EOF' > proxies.txt
+http://user:password@ip:port
+socks5://user:password@ip:port
+EOF
+
+# 5. Launch the scanner
+python main.py
+Leave discord_tokens empty ([]) in config.json if you wish to run in Proxy Mode[cite: 1].
+
+Available names found during the run are saved automatically to hits.txt[cite: 1].
+
+⚠️ ⚖️ Disclaimer
+This project is created strictly for educational, security analysis, and testing purposes. Automating user interactions or API queries may violate third-party Terms of Service. The maintainers assume no responsibility for misuse of this software.
