@@ -29,15 +29,15 @@
 
 ## ⚙️ Operating Modes
 
-The engine supports two primary operational approaches[cite: 1]:
+The engine supports two primary operational approaches:
 
 ### 1. Token Mode
-* **How it works:** Authenticates directly using your account token(s) configured in `config.json`[cite: 1].
-* **Best for:** Fast verification and low-overhead targeted checks[cite: 1].
-* **Setup:** Place your token inside `config.json` under `discord_tokens`[cite: 1].
+* **How it works:** Authenticates directly using your account token(s) configured in `config.json`.
+* **Best for:** Fast verification and low-overhead targeted checks.
+* **Setup:** Place your token inside `config.json` under `discord_tokens`.
 
 ### 2. Proxy Mode
-* **How it works:** Routes requests across external connections listed in `proxies.txt` to bypass IP-based throttling[cite: 1].
+* **How it works:** Routes requests across external connections listed in `proxies.txt` to bypass IP-based throttling.
 * **Best for:** High-volume, continuous generation and brute-force style dictionary runs.
 * **Requirements:** Requires configuring `proxies.txt`.
 
