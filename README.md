@@ -52,7 +52,6 @@ The engine supports two primary operational approaches:
 ├── config.json          # Main runtime configuration & tokens
 ├── proxies.txt          # List of proxies (one per line)
 ├── main.py              # Main execution script & lane orchestrator
-├── sniper.py            # Underlying scanner engine & dashboard UI
 ├── requirements.txt     # Python dependencies
 └── hits.txt             # Auto-saved available usernames
 
