@@ -1,0 +1,5 @@
+{
+  "discord_tokens": [],
+  "discord_token": "YOUR_DISCORD_TOKEN_HERE",
+  "note": "paste your discord user token(s). discord_tokens is a list (each becomes an independent lane). discord_token is a single-token fallback."
+}
