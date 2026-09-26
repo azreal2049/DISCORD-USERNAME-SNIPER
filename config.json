@@ -1,4 +1,0 @@
-{
-  "discord_token": "enter your discord token here",
-  "note": "paste your discord user token in discord_token field. leave empty to use unauthenticated endpoint."
-}
